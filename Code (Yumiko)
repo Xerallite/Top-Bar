@@ -1,0 +1,125 @@
+
+/* --- Styling the MAL bar --- */
+
+#mal_control_strip {
+	background: none no-repeat scroll 100% 0 transparent !important;
+	background-color: rgba(57, 57, 57, 0.7) !important;
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+}
+
+#mal_control_strip a {
+	text-decoration: none !important;
+}
+
+#mal_control_strip td {
+	width: auto;
+}
+
+#mal_control_strip div {
+	float: left;
+}
+
+#mal_control_strip div, #mal_control_strip div a {
+	font-family: 'Quattrocento Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	text-transform: uppercase;
+}
+
+#mal_cs_listinfo, #mal_cs_otherlinks {
+	border-right: 0px !important;
+	font-weight: bold;
+}
+
+#mal_cs_listinfo a, #mal_cs_otherlinks a {
+	font-weight: bold !important;
+}
+
+
+/* Styles logout button */
+#mal_cs_listinfo > :nth-child(2) a {
+	padding: 2px 2px 2px 2px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, .6);
+	margin-left: 5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	text-shadow: 0px -1px 0px #061221;
+}
+
+#mal_cs_listinfo > :nth-child(2) a:hover {
+	border-bottom: 0px;
+	box-shadow: 0px 0px 10px #623992;
+}
+
+#mal_cs_listinfo > :first-child::before {
+	content: "Salutations, ";
+}
+
+#mal_cs_listinfo > :first-child::after {
+	content: "\00A0";
+}
+
+#mal_cs_links {
+	width: 115px !important;
+}
+
+#mal_cs_links > :nth-child(2) {
+	margin-left: 2px;
+}
+
+/* Hides link text for image replacement */
+#mal_cs_links a {
+	display: block;
+	overflow: hidden;
+	width: 20px;
+	height: 20px;
+	text-indent: 100%;
+	white-space: nowrap;
+	float: left;
+	margin-right: 10px;
+	text-align: right;
+}
+
+#mal_cs_links a:hover {
+	border: 0px;
+}
+
+#mal_cs_links a[href="http://myanimelist.net/addtolist.php?hidenav=1"] {
+	background: url('https://dl.dropbox.com/u/11174326/Chu2/icon1.png');
+}
+
+#mal_cs_links a[href="http://myanimelist.net"] {
+	background: url('https://dl.dropbox.com/u/11174326/Chu2/icon2.png');
+	margin-right: 0px !important;
+}
+
+#mal_cs_links > :nth-child(2) > :first-child {
+	background: url('https://dl.dropbox.com/u/11174326/Chu2/icon3.png');
+}
+
+#mal_cs_links > :nth-child(2) > :last-child {
+	background: url('https://dl.dropbox.com/u/11174326/Chu2/icon4.png');
+	margin-right: 0px !important;
+}
+
+#mal_cs_otherlinks > :nth-child(2) {
+	float: right;
+	text-align: right;
+	position: relative;
+	right: 150px;
+}
+
+#mal_cs_otherlinks a[href="http://myanimelist.net/register.php"]::before, #mal_cs_otherlinks a[href="http://myanimelist.net/forum/"]::before {
+	content: "|\00A0\00A0";
+}
+
+#mal_cs_otherlinks a[href="http://myanimelist.net/register.php"]::after, #mal_cs_otherlinks a[href="http://myanimelist.net/forum/"]::after {
+	content: "\00A0\00A0|";
+}
+
+#mal_cs_powered a[href="http://myanimelist.net"] {
+	display: none;
+}
